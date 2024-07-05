@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "businesses",
+  "info": {
+    "singularName": "business",
+    "pluralName": "businesses",
+    "displayName": "Business",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "richtext",
+      "required": false
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "tags": {
+      "type": "text",
+      "required": false
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "best": {
+      "type": "boolean"
+    },
+    "locate": {
+      "type": "text"
+    },
+    "whatsapp": {
+      "type": "biginteger"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "business"
+    },
+    "slug": {
+      "type": "string"
+    },
+    "categorieone": {
+      "type": "string"
+    },
+    "telefono": {
+      "type": "biginteger"
+    },
+    "website": {
+      "type": "string"
+    },
+    "categorietwo": {
+      "type": "string"
+    }
+  }
+}
