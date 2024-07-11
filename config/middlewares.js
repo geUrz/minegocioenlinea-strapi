@@ -12,7 +12,7 @@ module.exports = [
     settings: {
       cors: {
         enabled: true,
-        origin: ['https://minegocioenlinea-strapi.s3.us-east-2.amazonaws.com', '*'],
+        origin: ['*'],
       },
     },
     
