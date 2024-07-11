@@ -3,14 +3,10 @@ module.exports = [
 
   {
     name: 'strapi::cors',
-    settings: {
-      cors: {
-        enabled: true,
-        origin: ['*'],
-        headers: ['Content-Type', 'Authorization', 'X-Frame-Options'],
-        methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
-        credentials: true,
-      },
+    config: {
+      enabled: true,
+      headers: '*',
+      origin: ['https://minegocioenlinea-strapi.onrender.com', '*']
     }
   },
 
