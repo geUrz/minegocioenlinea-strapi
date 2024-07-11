@@ -1,8 +1,8 @@
 module.exports = [
   'strapi::errors',
-  'strapi::cors',
 
   {
+    name: 'strapi::cors',
     settings: {
       cors: {
         enabled: true,
