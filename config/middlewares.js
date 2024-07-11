@@ -12,7 +12,7 @@ module.exports = [
     settings: {
       cors: {
         enabled: true,
-        origin: ['https://minegocioenlinea.netlify.app/', '*'],
+        origin: ['https://minegocioenlinea.netlify.app', '*'],
       },
     },
     name: 'strapi::security',
