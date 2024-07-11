@@ -11,11 +11,13 @@ module.exports = [
   {
     
     name: 'strapi::security',
-    config: {
+    settings: {
       cors: {
         enabled: true,
         origin: ['https://minegocioenlinea.netlify.app', '*'],
       },
+    },
+    config: {
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
