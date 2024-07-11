@@ -9,6 +9,12 @@ module.exports = [
   'strapi::favicon',
   'strapi::public',
   {
+    settings: {
+      cors: {
+        enabled: true,
+        origin: ['https://minegocioenlinea.netlify.app/', '*'],
+      },
+    },
     name: 'strapi::security',
     config: {
       contentSecurityPolicy: {
