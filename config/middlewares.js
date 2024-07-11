@@ -7,6 +7,9 @@ module.exports = [
       cors: {
         enabled: true,
         origin: ['*'],
+        headers: ['Content-Type', 'Authorization', 'X-Frame-Options'],
+        methods: ['GET', 'POST', 'PUT', 'PATCH', 'DELETE'],
+        credentials: true,
       },
     }
   },
