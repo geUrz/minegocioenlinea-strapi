@@ -1,45 +1,36 @@
 module.exports = [
-  'strapi::errors',
-
+  "strapi::errors",
+  "strapi::poweredBy",
+  "strapi::logger",
+  "strapi::query",
+  "strapi::body",
+  "strapi::session",
+  "strapi::favicon",
+  "strapi::public",
   {
-    name: 'strapi::cors',
-    config: {
-      headers: '*',
-      origin: ['https://minegocioenlinea.netlify.app/', '*']
-    }
-  },
-
-  'strapi::poweredBy',
-  'strapi::logger',
-  'strapi::query',
-  'strapi::body',
-  'strapi::session',
-  'strapi::favicon',
-  'strapi::public',
-  {
-    name: 'strapi::security',
+    name: "strapi::security",
     config: {
       contentSecurityPolicy: {
         useDefaults: true,
         directives: {
-          'connect-src': ["'self'", 'https:'],
-          'img-src': [
+          "connect-src": ["'self'", "https:"],
+          "img-src": [
             "'self'",
-            'data:',
-            'blob:',
-            'market-assets.strapi.io',
-            'https://minegocioenlinea-strapi.s3.us-east-2.amazonaws.com/',
+            "data:",
+            "blob:",
+            "market-assets.strapi.io",
+            "https://minegocioenlinea-strapi.s3.us-east-2.amazonaws.com/",
           ],
-          'media-src': [
+          "media-src": [
             "'self'",
-            'data:',
-            'blob:',
-            'market-assets.strapi.io',
-            'https://minegocioenlinea-strapi.s3.us-east-2.amazonaws.com/',
+            "data:",
+            "blob:",
+            "market-assets.strapi.io",
+            "https://minegocioenlinea-strapi.s3.us-east-2.amazonaws.com/",
           ],
           upgradeInsecureRequests: null,
         },
       },
-    },
-  },
+    },
+  },
 ];
