@@ -5,7 +5,7 @@ module.exports = [
     name: 'strapi::cors',
     config: {
       headers: '*',
-      origin: ['https://minegocioenlinea.netlify.app', '*']
+      origin: ['https://minegocioenlinea-strapi.s3.us-east-2.amazonaws.com/']
     }
   },
 
