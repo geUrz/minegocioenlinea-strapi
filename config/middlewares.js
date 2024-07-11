@@ -1,6 +1,16 @@
 module.exports = [
   'strapi::errors',
   'strapi::cors',
+
+  {
+    settings: {
+      cors: {
+        enabled: true,
+        origin: ['*'],
+      },
+    }
+  },
+
   'strapi::poweredBy',
   'strapi::logger',
   'strapi::query',
@@ -9,13 +19,6 @@ module.exports = [
   'strapi::favicon',
   'strapi::public',
   {
-    settings: {
-      cors: {
-        enabled: true,
-        origin: ['*'],
-      },
-    },
-    
     name: 'strapi::security',
     config: {
       contentSecurityPolicy: {
