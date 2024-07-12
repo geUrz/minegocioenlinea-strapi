@@ -1,6 +1,7 @@
 module.exports = [
   "strapi::errors",
   "strapi::poweredBy",
+  "strapi::cors",
   "strapi::logger",
   "strapi::query",
   "strapi::body",
@@ -31,15 +32,6 @@ module.exports = [
           upgradeInsecureRequests: null,
         },
       },
-    },
-  },
-  {
-    name: "strapi::cors",
-    config: {
-      enabled: true,
-      origin: "*", // Allows all origins. You can restrict it to specific origins if needed.
-      methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-      headers: ["Content-Type", "Authorization", "Origin", "Accept"],
     },
   },
 ];
